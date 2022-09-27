@@ -21,11 +21,12 @@ mybatis:
 ---
  spring:
   profiles:
-    active: dev
+    active:
+    - dev
   datasource:
     hikari:
       driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-      jdbc-url: jdbc:log4jdbc:mysql://localhost:43306/insight?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+      jdbc-url: jdbc:log4jdbc:mysql://localhost:43306/insight?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false
       username: insight
       password: 1q2w3e4r
   
